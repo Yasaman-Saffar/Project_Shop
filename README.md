@@ -36,7 +36,7 @@ A beginner-friendly e-commerce web application built with Django, designed to sh
 ![Add Product](screenshots/Add-product-form.PNG)
 
 ### Product Detail Page
-![Product Detail](screenshots/product-detail.PNG)
+![Product Details](screenshots/product-details.PNG)
 
 ### Add Ticket Page
 ![Add Ticket](screenshots/Ticket-form.PNG)
@@ -59,9 +59,9 @@ A beginner-friendly e-commerce web application built with Django, designed to sh
    ```
    
 3. Install project dependencies
-  ```bash
-  pip install -r requirements.txt
-  ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. Set up environment variables
   Create a .env file in the root of your project (next to manage.py) and add the following variables:
