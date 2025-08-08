@@ -36,7 +36,7 @@ A beginner-friendly e-commerce web application built with Django, designed to sh
 ![Add Product](screenshots/Add-product-form.PNG)
 
 ### Product Detail Page
-![Product Details](screenshots/product-details.PNG)
+![Product Details](screenshots/Product-details.PNG)
 
 ### Add Ticket Page
 ![Add Ticket](screenshots/Ticket-form.PNG)
@@ -65,31 +65,31 @@ A beginner-friendly e-commerce web application built with Django, designed to sh
 
 4. Set up environment variables
   Create a .env file in the root of your project (next to manage.py) and add the following variables:
-  ```bash
-  DB_NAME=your_postgres_database
-  DB_USER=your_database_user
-  DB_PASSWORD=your_database_password
-  DB_HOST=localhost
-  DB_PORT=5432
-  ```
+   ```bash
+   DB_NAME=your_postgres_database
+   DB_USER=your_database_user
+   DB_PASSWORD=your_database_password
+   DB_HOST=localhost
+   DB_PORT=5432
+   ```
 
 5. Apply database migrations
-  ```bash
-  python manage.py makemigrations
-  python manage.py migrate
-  ```
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
 
 6. Create a superuser (optional)
-  ```bash
-  python manage.py createsuperuser
-  ```
+   ```bash
+   python manage.py createsuperuser
+   ```
 
 7. Start the development server
-  ```bash
-  python manage.py runserver
-  ```
+   ```bash
+   python manage.py runserver
+   ```
 
 9. Access the application in your browser
-  ```bash
-  http://127.0.0.1:8000/
-  ```
+   ```bash
+   http://127.0.0.1:8000/
+   ```
