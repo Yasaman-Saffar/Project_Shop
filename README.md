@@ -30,16 +30,16 @@ A beginner-friendly e-commerce web application built with Django, designed to sh
 ## Screenshots
 
 ### Homepage
-![Homepage](screenshots/Homepage.png)
+![Homepage](screenshots/Homepage.PNG)
 
 ### Add Product Form
-![Add Product](screenshots/Add-product-form.png)
+![Add Product](screenshots/Add-product-form.PNG)
 
 ### Product Detail Page
-![Product Detail](screenshots/product-detail.png)
+![Product Detail](screenshots/product-detail.PNG)
 
 ### Add Ticket Page
-![Add Ticket](screenshots/Ticket-form.png)
+![Add Ticket](screenshots/Ticket-form.PNG)
 
 ---
 
