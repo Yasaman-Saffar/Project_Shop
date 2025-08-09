@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -83,15 +85,14 @@ WSGI_APPLICATION = "Core.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE" :'django.db.backends.postgresql',
-        "NAME" : 'onlineshopDB',
-        "USER" : "onlineshop-admin",
-        "PASSWORD" : '123',
-        "HOST": 'localhost',
-        "PORT" : '5432',
+        "ENGINE": 'django.db.backends.postgresql',
+        "NAME": config('DB_NAME'),
+        "USER": config('DB_USER'),
+        "PASSWORD": config('DB_PASSWORD'),
+        "HOST": config('DB_HOST'),
+        "PORT": config('DB_PORT'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
