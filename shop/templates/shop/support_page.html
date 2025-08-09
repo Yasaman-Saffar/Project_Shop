@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "shop/support.css" %}">
+{% endblock css_files %}
+
+{% block page_title %}{% endblock page_title %}
+
+{% block page_content %}
+        <div class="container my-5">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">{{ form.fname.label }}</span>
+                    {{ form.fname|add_class:"form-control"|attr:"placeholder: first name" }}
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">{{ form.lname.label }}</span>
+                    {{ form.lname|add_class:"form-control"|attr:"placeholder: last name" }}
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">{{ form.email.label }}</span>
+                    {{ form.email|add_class:"form-control"|attr:"placeholder: email" }}
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">{{ form.title.label }}</span>
+                    {{ form.title|add_class:"form-control"|attr:"placeholder: title" }}
+                </div>
+                    <div class="input-group mb-3"> 
+                {{ form.content|add_class:"form-control"|attr:"placeholder: content" }}
+                </div>
+                <button class="btn btn-primary my-3" type="submit">Submit</button>
+            </form>
+        </div>
+{% endblock page_content %}
+
+{% block page_scripts %}{% endblock page_scripts %}

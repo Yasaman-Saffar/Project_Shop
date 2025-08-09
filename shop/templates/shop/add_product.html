@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block css_files %}{% endblock css_files %}
+
+{% block page_title %}{% endblock page_title %}
+
+{% block page_content %}
+        <div class="container my-5">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">{{ product_form.name.label }}</span>
+                    {{ product_form.name|add_class:"form-control"|attr:"placeholder: Lenovo ideapad 5" }}
+                </div>
+                <div class="input-group mb-3">
+                    {{ product_form.image|add_class:"form-control"|attr:" id:inputGroupFile02" }}
+                    <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">{{ product_form.description.label }}</span>
+                    {{ product_form.description|add_class:"form-control"|attr:"placeholder: The best option for general use and multimedia." }}
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">{{ product_form.information.label }}</span>
+                    {{ product_form.information|add_class:"form-control"|attr:"placeholder: Core i5 - RAM 16G" }}
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon4">{{ product_form.price.label }}</span>
+                    {{ product_form.price|add_class:"form-control"|attr:"placeholder: 580.0" }}
+                    <span class="input-group-text">$</span>
+                </div>
+                <button class="btn btn-primary my-3" type="submit">Submit</button>
+            </form>
+        </div>
+{% endblock page_content %}
+
+{% block page_scripts %}{% endblock page_scripts %}
