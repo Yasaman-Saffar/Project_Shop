@@ -32,8 +32,10 @@ SECRET_KEY = "django-insecure-_qi=^b$906je!0k+7oq5w5*yk##5$#ai1)z%=k)rwzejp0f=$9
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://project-shop-y3ug.onrender.com'
-]
+    'https://project-shop-y3ug.onrender.com',
+    'localhost',
+    '127.0.0.1',
+    ]
 
 # Application definition
 
